@@ -39,8 +39,8 @@ cmd - 4 : yabai -m space --focus 4
 cmd - 5 : yabai -m space --focus 5
 
 # Move to display
-cmd - o  : yabai -m display --focus prev
-shift + cmd - o : yabai -m window --display next; yabai -m display --focus next
+cmd - o  : yabai -m display --focus recent
+shift + cmd - o : yabai -m window --display recent; yabai -m display --focus recent
 
 # Resize windows
 lctrl + alt - h : yabai -m window --resize left:-50:0; \
@@ -84,5 +84,5 @@ shift + lctrl + alt - r : \
     launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
 
 # Make window native fullscreen
-alt - f         : yabai -m window --toggle zoom-fullscreen
-shift + alt - f : yabai -m window --toggle native-fullscreen
+cmd - m         : yabai -m window --toggle zoom-fullscreen
+shift + cmd - m : yabai -m window --toggle native-fullscreen
